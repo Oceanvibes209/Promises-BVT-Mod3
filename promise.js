@@ -28,6 +28,7 @@ const recordVideoThree = new Promise ((resolve, reject) => {
     resolve('Video 3 recorded')
 })
 
+//Promise.all
 Promise.all([
     recordVideoOne,
     recordVideoTwo,
@@ -35,6 +36,7 @@ Promise.all([
 ]).then ((messages)=> {
     console.log(messages)
 })
+//Resolves or rejects multiple promises at once
 
 //Promise.race()
 
